@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maxfeldman.realtimefirebasedb.AddTrackActivity">
+
+<TextView
+    android:id="@+id/tv_artist_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter track name"
+        android:id="@+id/et_track_name"
+        android:layout_below="@id/tv_artist_name"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seek_bar_rating"
+        android:max="5"
+        android:layout_below="@id/et_track_name"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/track_add_btn"
+        android:layout_below="@id/seek_bar_rating"
+        android:text="add"
+
+        />
+    <TextView
+        android:id="@+id/tv_tracks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tracks"
+        android:layout_below="@id/track_add_btn"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textAlignment="center"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_view_tracks"
+        android:layout_below="@id/tv_tracks"
+
+        >
+
+
+    </ListView>
+</RelativeLayout>
